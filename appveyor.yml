@@ -26,3 +26,8 @@ build:
   project: c:\projects\spaghetti\build\Spaghetti.sln
   verbosity: minimal
   parallel: true
+
+artifacts:
+  - path: build
+    name: Spaghetti
+    type: zip
