@@ -31,7 +31,3 @@ artifacts:
   - path: build
     name: Spaghetti
     type: zip
-    
-  - path: '..\..\Qt\5.10.1'
-    name: Qt5
-    type: zip
