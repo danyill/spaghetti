@@ -32,6 +32,6 @@ artifacts:
     name: Spaghetti
     type: zip
     
-  - path: 'C:\Qt\5.10.1'
+  - path: '..\..\Qt\5.10.1'
     name: Qt5
     type: zip
