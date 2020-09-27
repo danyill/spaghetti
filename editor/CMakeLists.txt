@@ -4,8 +4,8 @@ project(SpaghettiEditor VERSION ${Spaghetti_VERSION} LANGUAGES C CXX)
 
 find_package(Qt5 REQUIRED COMPONENTS Widgets)
 
+link_libraries("-static")
 add_executable(SpaghettiEditor main.cc)
-target_link_libraries(SpaghettiEditor PUBLIC "-static")
 
 target_compile_definitions(SpaghettiEditor
   PRIVATE ${SPAGHETTI_DEFINITIONS}
