@@ -27,6 +27,17 @@ build:
   verbosity: minimal
   parallel: true
 
+
+after_build:
+- cmd: >-
+  cd build
+  
+  set PATH=%PATH%;C:\Qt\5.10.1\bin;C:\Qt\5.10.1\
+
+  windeployqt --version
+
+  windeployqt build\bin\Release
+
 artifacts:
   - path: build
     name: Spaghetti
