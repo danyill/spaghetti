@@ -30,15 +30,13 @@ build:
 
 after_build:
 - cmd: >-
-    cd build
-    
     dir C:\Qt\5.10.1
     
     set PATH=%PATH%;C:\Qt\5.10.1\bin
 
     windeployqt --version
 
-    windeployqt build\bin\Release
+    windeployqt bin\Release
 
 artifacts:
   - path: build
